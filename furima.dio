@@ -1,6 +1,6 @@
-<mxfile host="65bd71144e" modified="2020-11-11T02:35:53.647Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.0 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" version="13.6.5" etag="1Go0yuo87OvHEiwM8r36">
+<mxfile host="65bd71144e" modified="2020-11-11T13:47:57.064Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.0 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" version="13.6.5" etag="X2ogZLnhqCXXlBfTMbC4">
     <diagram id="WSemvhW_GMCoOdON1jQo" name="ページ1">
-        <mxGraphModel dx="237" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="279" dy="747" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -85,7 +85,7 @@
                     <mxGeometry y="56" width="220" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="94" value="addresses" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=18;gradientColor=#ffa500;fillColor=#ffcd28;strokeColor=#d79b00;" vertex="1" parent="1">
-                    <mxGeometry x="530" y="480" width="240" height="206" as="geometry"/>
+                    <mxGeometry x="530" y="480" width="240" height="236" as="geometry"/>
                 </mxCell>
                 <mxCell id="95" value="post_code" style="text;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;strokeColor=#f0f0f0;" vertex="1" parent="94">
                     <mxGeometry y="26" width="240" height="30" as="geometry"/>
@@ -104,6 +104,9 @@
                 </mxCell>
                 <mxCell id="99" value="phone_number" style="text;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;strokeColor=#f0f0f0;" vertex="1" parent="94">
                     <mxGeometry y="176" width="240" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="purchase" style="text;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;strokeColor=#f0f0f0;" vertex="1" parent="94">
+                    <mxGeometry y="206" width="240" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
