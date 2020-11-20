@@ -1,7 +1,7 @@
 class Item < ApplicationRecord
   has_one_attached :image
   extend ActiveHash::Associations::ActiveRecordExtensions
-  belongs_to_active_hash :category, :condition, :shipping_status, :prefecture, :scheduled_delivery
+  belongs_to :category, :condition, :shipping_status, :prefecture, :scheduled_delivery
 
   with_options presence: true do
     validates :name
@@ -12,5 +12,6 @@ class Item < ApplicationRecord
     validates :prefecture_id, numericality: { other_than: 1 }
     validates :scheduled_delivery_id, numericality: { other_than: 1 }
     validates :price
-    validates :user, foreign_key: true
+    validates :user
+  end
 end
