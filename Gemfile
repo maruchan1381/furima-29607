@@ -66,3 +66,4 @@ group :production do
 end
 
 gem 'mini_magick'
+gem 'active_hash'
