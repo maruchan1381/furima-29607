@@ -1,8 +1,8 @@
 class ItemsController < ApplicationController
   before_action :authenticate_user!, only: [:new]
-  
+
   def index
-    @items = Item.all
+    # @items = Item.all(商品機能一覧機能実装)
   end
 
   def new
