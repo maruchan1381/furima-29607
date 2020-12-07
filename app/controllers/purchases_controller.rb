@@ -1,8 +1,15 @@
 class PurchasesController < ApplicationController
+  before_action :move_to_signed_in, expect: :index
   before_action :set_item, only: [:index, :create]
   
   def index
     @purchase_address = PurchaseAddress.new
+    if current_user == @item.user
+      redirect_to root_path
+    end
+    if @item.purchase.present?
+      redirect_to root_path
+    end
   end
 
   def create
@@ -17,6 +24,12 @@ class PurchasesController < ApplicationController
   end
 
   private
+
+  def move_to_signed_in
+    unless user_signed_in?
+      redirect_to new_user_session_path
+    end
+  end
   
   def set_item
   @item = Item.find_by(id: params[:item_id])
@@ -27,7 +40,7 @@ class PurchasesController < ApplicationController
   end
 
   def pay_item
-      Payjp.api_key = "sk_test_2c55fa080ad540d6677bc1eb"
+      Payjp.api_key = ENV["PAYJP_SECRET_KEY"]
       Payjp::Charge.create(
         amount: Item.find_by(id: params[:item_id]).price,
         card: purchase_params[:token],
