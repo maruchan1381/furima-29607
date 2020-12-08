@@ -36,7 +36,6 @@ class ItemsController < ApplicationController
     else
       render 'edit'
     end
-    redirect_to item_path
   end
 
   def destroy
